@@ -1,0 +1,110 @@
+@import "../../assets/variables";
+
+.filtered-events {
+  margin-bottom: 30px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .view-all {
+      cursor: pointer;
+    }
+  }
+  .custom-slider {
+
+    @media #{$for-mobile} {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    .slick-slide {
+      padding: 10px;
+      @media #{$for-mobile} {
+        padding: 5px;
+      }
+    }
+    .custom-prev-next-btns {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 70px;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      transform: translate(0, -50%);
+      cursor: pointer;
+      background: #FFF;
+      border-radius: 20px;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(55,55,55,.3);
+
+      .btn-icon {
+        font-size: 1.1rem;
+      }
+    }
+    .custom-prev-btn {
+      left: -10px;
+    }
+    .custom-next-btn {
+      right: -10px;
+    }
+    .slider-event {
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .box-event-banner {
+        width: 100%;
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+        }
+
+        .event-red-tag {
+          position: absolute;
+          background: #eb3d49;
+          border-radius: 24px;
+          font-size: 11px;
+          color: #fff;
+          padding: 5px 10px;
+          top: 8px;
+          right: 8px;
+          opacity: .9;
+          text-transform: uppercase;
+        }
+      }
+      .race-title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      .race-date {
+        font-size: 12px;
+      }
+      .event-tags {
+        margin-top: 5px;
+        display: flex;
+        flex-flow: wrap;
+        .tag {
+          padding: 3px 12px;
+          text-align: center;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          font-size: 12px;
+          border: 1px solid #CCC;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

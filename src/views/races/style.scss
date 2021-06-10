@@ -1,0 +1,81 @@
+@import "../../assets/variables";
+
+.races-container {
+  margin-bottom: 20px;
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .races-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .races-flat-list {
+    .horizonal-race-card {
+      display: flex;
+      margin-bottom: 30px;
+
+      @media #{$for-mobile} {
+        flex-direction: column;
+      }
+
+      .box-event-banner {
+        position: relative;
+        max-width: 40%;
+        margin-right: 10px;
+
+        @media #{$for-mobile} {
+          max-width: 100%;
+          margin-right: 0;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+        }
+        .event-red-tag {
+          position: absolute;
+          background: #eb3d49;
+          border-radius: 24px;
+          font-size: 11px;
+          color: #fff;
+          padding: 5px 10px;
+          top: 8px;
+          right: 8px;
+          opacity: .9;
+          text-transform: uppercase;
+        }
+      }
+      .race-info {
+        display: flex;
+        flex-direction: column;
+
+        .race-title {
+          font-size: 14px;
+          font-weight: bold;
+          margin-top: 5px;
+        }
+        .race-date {
+          font-size: 12px;
+        }
+        .event-tags {
+          margin-top: 5px;
+          display: flex;
+          flex-flow: wrap;
+          .tag {
+            padding: 3px 12px;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            border: 1px solid #CCC;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}

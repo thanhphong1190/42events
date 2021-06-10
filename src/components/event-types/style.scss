@@ -1,0 +1,27 @@
+.event-types {
+  display: flex;
+  flex-flow: wrap;
+
+  .event-type {
+    position: relative;
+    border-radius: 12px;
+    width: 28.14vw;
+    height: 26vw;
+    max-width: 144px;
+    max-height: 116px;
+    background-size: 60%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    .event-title {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: #FFF;
+      font-weight: bold;
+    }
+  }
+}

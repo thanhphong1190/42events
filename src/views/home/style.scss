@@ -1,0 +1,12 @@
+@import "../../assets/variables";
+
+.home-container {
+  margin-bottom: 10px;
+
+  .home-carsousel-col {
+    @media #{$for-mobile} {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

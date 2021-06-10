@@ -1,0 +1,15 @@
+@import "../../assets/variables";
+
+.home-carousel {
+
+  @media #{$for-mobile} {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .carousel-item {
+    img {
+      width: 100%;
+    }
+  }
+}
