@@ -22,6 +22,12 @@
       margin-right: -15px;
     }
 
+    .slick-arrow {
+      @media #{$for-mobile} {
+        display: none !important;
+      }
+    }
+
     .slick-slide {
       padding: 10px;
       @media #{$for-mobile} {

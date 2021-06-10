@@ -12,4 +12,9 @@
       width: 100%;
     }
   }
+  .slick-arrow {
+    @media #{$for-mobile} {
+      display: none !important;
+    }
+  }
 }
